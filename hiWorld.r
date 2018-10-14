@@ -110,7 +110,7 @@ paste(a, b, c) # Contcatenation
 # TO MATCH APPROXIMATELY SIMILAR STRINGS
 # USES JACCARD ALGORITHM
 # NEED PACKAGE stringdist
-install.packages("stringdist")
+# install.packages("stringdist")
 library(stringdist) # call the library
 q1 <- stringdist("Delton", "Dalton", method = "jaccard", q=1) # q means #letter match
 q1 # if it is close to 0, the names are similar
@@ -142,7 +142,7 @@ head(data, 5)
 str(data) #shows the structure of the data
 # If I want to know all the details og Ram
 which(data$Name=="Ram") # This returns the index
-# Now to knoe all details of Ram,
+# Now to know all details of Ram,
 data[which(data$Name=="Ram"), ] # Directly index it using this
 # To know who all are married and who alll are not
 table(data$Married) # Gives a count of Y and N
